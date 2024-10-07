@@ -488,7 +488,7 @@ initiate() {
 
     echo
 
-    if [ "$yes_g" != "y" ]; then
+    if [ "${yes_g,,}" != "y" ]; then
       echo "Aborted"
       exit 1
     fi
@@ -522,7 +522,7 @@ initiate() {
 
       echo
 
-      if [ "$yes_go" != "y" ]; then
+      if [ "${yes_go,,}" != "y" ]; then
         exit 0
       fi
     fi
